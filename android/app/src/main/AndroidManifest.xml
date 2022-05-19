@@ -31,7 +31,7 @@
     <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
     
    <application
-        android:label="speech_to_text_example"
+        android:label="B-My"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
@@ -62,3 +62,4 @@
             android:value="2" />
     </application>
 </manifest>
+

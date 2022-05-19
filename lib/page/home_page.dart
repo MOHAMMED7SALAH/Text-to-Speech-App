@@ -12,13 +12,14 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  String text = 'Press the button and start speaking';
+  String text = 'Press the button and let me know what you want to do';
   bool isListening = false;
   double confidence = 1.0;
 
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(
+          backgroundColor: const Color(0xFF03929C),
           title: Text('Confidence: ${(confidence * 100.0).toStringAsFixed(1)}%'),
           centerTitle: true,
           actions: [
@@ -56,9 +57,10 @@ class _HomePageState extends State<HomePage> {
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
         floatingActionButton: AvatarGlow(
+          
           animate: isListening,
           endRadius: 75,
-          glowColor: Theme.of(context).primaryColor,
+          glowColor: const Color(0xFF03929C),
           child: FloatingActionButton(
             child: Icon(isListening ? Icons.mic : Icons.mic_none, size: 36),
             onPressed: _listen,
