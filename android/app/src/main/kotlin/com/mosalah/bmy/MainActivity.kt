@@ -1,4 +1,4 @@
-package com.example.speech_to_text_example
+package com.mosalah.bmy
 
 import io.flutter.embedding.android.FlutterActivity
 

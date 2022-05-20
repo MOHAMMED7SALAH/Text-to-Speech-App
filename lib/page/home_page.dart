@@ -56,15 +56,21 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-        floatingActionButton: AvatarGlow(
+        
+        floatingActionButton: 
+
+        AvatarGlow(
+          
           
           animate: isListening,
           endRadius: 75,
+          
           glowColor: const Color(0xFF03929C),
           child: FloatingActionButton(
             child: Icon(isListening ? Icons.mic : Icons.mic_none, size: 36),
             onPressed: _listen,
           ),
+          
         ),
       );
 void _listen() async {
